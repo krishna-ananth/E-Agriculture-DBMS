@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Contact Us | E-Agriculture</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="main">
+  <!-- header -->
+  <div id="header">
+    <ul class="site-nav">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="resources.php">Resources</a></li>
+	  <li><a href="login.php">Login</a></li>
+	  <li><a href="register.php">Register</a></li>
+      <li><a href="contact-us.html">Contact Us</a></li>
+      <li><a href="sitemap.html">Site Map</a></li>
+    </ul>
+    <div class="logo"></div>
+  </div>
+  <!-- content -->
+  <div id="content">
+    <div class="indent1">
+      <h2>Contact Us</h2>
+      <h3>Please enter the following details.</h3>
+      <form id="contacts-form" action="mail.php" method="POST">
+        <fieldset>
+        <div class="field">
+          <label>Your Name:</label>
+          <input type="text" name="from"/>
+        </div>
+        <div class="field">
+          <label>Your Phone Number:</label>
+          <input type="text" name="phone"/>
+        </div>
+        <div class="field">
+          <label>Subject of your message:</label>
+          <input type="text" name="subject"/>
+        </div>
+        <div class="field">
+          <label>Your Message:</label>
+          <textarea cols="1" rows="1" name="body"></textarea>
+        </div>
+        <div class="alignright"><a href="#" onclick="document.getElementById('contacts-form').submit()"><strong>Send Your Message!</strong></a></div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
